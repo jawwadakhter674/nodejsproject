@@ -16,6 +16,7 @@ app.use(urlEncoded)
 app.use(express.static("public"))
 app.use(express.json())
 app.use(cors())
+const port = process.env.PORT||5000
 
 
 
@@ -112,7 +113,7 @@ if (!errors.isEmpty()) {
 
 
 // Server listen
-app.listen(5000, () => console.log('server is listening'));
+app.listen(port, () => console.log('server is listening'));
 
 
 
