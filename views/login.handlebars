@@ -1,0 +1,39 @@
+       <div class="alertboxMain">
+
+       <div class="alertBox">
+       <p class="para_login">{{error}}</p>
+        <i class="fas fa-times" id="crossMark"  ></i>
+       </div>
+       </div>
+
+   <div class="global-container">
+        <div class="card login-form">
+        <div class="card-body">
+            <h3 class="card-title text-center">
+                <img style="height: 50px; width: 180px;" src="./../images/logo.png" alt=""></h3>
+            <div class="card-text">
+    
+                <form action="/detail" method="POST">
+                 
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">username</label>
+                        <input type="text" class="form-control form-control-sm" name="username" >
+                    </div>
+                    <div class="form-group" >
+                        <label for="exampleInputPassword1">Password</label>
+                        <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
+                        <input type="password" name="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    
+                    <div class="sign-up">
+                        Don't have an account? <a href="#">Create One</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<script src="/javascript/login.js"></script>
